@@ -1,17 +1,24 @@
 import React from 'react';
-import Header from './Header';
-import TicketList from './TicketList';
-import { Switch, Route } from 'react-router-dom';
-import NewTicketForm from './NewTicketForm';
+import NavBar from './NavBar';
+import SideBar from './SideBar';
+
+// import { Switch, Route } from 'react-router-dom';
 
 export function App(){
   return(
     <div>
-      <Header/>
-      <Switch>
-        <Route exact path='/' component={TicketList} />
-        <Route path='/NewTicket' component={NewTicketForm} />
-      </Switch>
+      <NavBar/>
+      <div className="row">
+        <div className="col-md-2">
+          {/* <SideBar/> */}
+        </div>
+        <div className="col-md-10">
+          {/* <Switch>
+            <Route exact path='/' component={Discover} />
+            <Route path='/Browse' component={Browse} />
+          </Switch> */}
+        </div>
+      </div>
     </div>
   );
 }

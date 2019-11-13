@@ -1,0 +1,20 @@
+nav {
+    background-color: white;
+}
+
+.tabs.tabs-transparent .tab a {
+    color: black;
+}
+.tabs.tabs-transparent .tab a:hover {
+    color: rgb(119, 44, 232);
+}
+
+.tab {
+    color: black;
+}
+.tab:hover {
+    color:rgb(119, 44, 232);
+}
+#dots {
+    font-size: 100px;
+}
